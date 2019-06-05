@@ -1,0 +1,86 @@
+{
+  "extends": ["eslint-config-ifood"],
+  "globals": {
+    "gtag": false,
+    "TrackJS": false
+  },
+  "rules": {
+    "import/first": "off",
+    "import/extensions": [
+      "error",
+      "always",
+      {
+        "mjs": "never",
+        "js": "never",
+        "jsx": "never",
+        "scss": "never"
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "error",
+      {
+        "required": {
+          "some": ["nesting", "id"]
+        }
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/**/components/**/*.js",
+        "src/layouts/**/*.js",
+        "src/middlewares/**/*.js",
+        "src/**/pages/**/*.js",
+        "src/**/reducers/**/*.js"
+      ],
+      "rules": {
+        "import/no-default-export": "off",
+        "import/no-named-as-default": "off",
+        "import/prefer-default-export": "error"
+      }
+    },
+    {
+      "files": [
+        "src/actions/**/*.js",
+        "src/modules/*/actions/**/*.js",
+        "src/modules/*/actions.js",
+
+        "src/constants/**/*.js",
+        "src/modules/*/constants/**/*.js",
+        "src/modules/*/constants.js",
+
+        "src/decorators/**/*.js",
+        "src/modules/*/decorators/**/*.js",
+        "src/modules/*/decorators.js",
+
+        "src/selectors/**/*.js",
+        "src/modules/*/selectors/**/*.js",
+        "src/modules/*/selectors.js",
+
+        "src/services/**/*.js",
+
+        "src/types/**/*.js",
+        "src/modules/*/types/**/*.js",
+        "src/modules/*/types.js",
+
+        "src/utils/**/*.js",
+        "src/modules/*/utils/**/*.js",
+        "src/modules/*/utils.js"
+      ],
+      "rules": {
+        "import/no-default-export": "error",
+        "import/no-named-as-default": "off",
+        "import/prefer-default-export": "off"
+      }
+    }
+  ]
+}

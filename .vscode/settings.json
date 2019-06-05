@@ -1,0 +1,41 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bin": true,
+    "**/__docs__": true,
+    "**/__reports__": true,
+    "**/dist": true,
+    "**/.sonar": true,
+    "**/.vscode": true
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/bin": true,
+    "**/.sonar": true
+  },
+  "files.associations": {
+    "**/src/**/*.js": "javascriptreact",
+    "**/.importsortrc": "json",
+    "**/.lintstagedrc": "json"
+  },
+  "gitlens.codeLens.enabled": false,
+  "editor.formatOnSave": true,
+  "jest.showCoverageOnLoad": true,
+  "jest.enableCodeLens": false,
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "src/modules/Intl/messages/.*\\.json",
+        "cmd": "cd ${workspaceRoot} && ./npmw run format:intl"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "amatiasq.sort-imports",
+    "orta.vscode-jest",
+    "shinnn.stylelint",
+    "rebornix.project-snippets",
+    "emeraldwalk.runonsave"
+  ]
+}

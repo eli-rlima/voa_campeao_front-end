@@ -1,6 +1,5 @@
 import { compose, filter, join, map, toPairs } from "ramda";
 
-import { TIME_OUT } from "constants/properties";
 import axios from "axios";
 import includes from "lodash/includes";
 
@@ -10,8 +9,8 @@ import includes from "lodash/includes";
  * @param {Number} status - Status
  * @return {Boolean} True if HTTP status is 2xx
  */
-const validateStatus = (status) => status.toString().indexOf("2") === 0;
-
+const validateStatus = status => status.toString().indexOf("2") === 0;
+const TIME_OUT = 3000;
 /**
  * HTTP Methods enumerator.
  */
@@ -40,7 +39,7 @@ export class HttpClient {
    * Intercept current axios instance with error handler.
    */
   interceptInstance() {
-    this.instance.interceptors.response.use(undefined, (error) => {
+    this.instance.interceptors.response.use(undefined, error => {
       const errorString = error.toString();
 
       if (includes(errorString, "timeout") && error.config) {
@@ -150,8 +149,8 @@ export class HttpClient {
   postMultiple(url, data, config, success, doneFunc) {
     return axios
       .all(
-        data.map((e) =>
-          this.baseRequest(HTTP_METHOD.POST, url, e, config, null, (error) => ({
+        data.map(e =>
+          this.baseRequest(HTTP_METHOD.POST, url, e, config, null, error => ({
             error
           }))
         )
@@ -221,11 +220,11 @@ export class HttpClient {
  * @param {String} The encoded query string
  */
 export const buildQueryString = compose(
-  (queryString) => (queryString ? `?${queryString}` : ""),
+  queryString => (queryString ? `?${queryString}` : ""),
   join("&"),
   map(
     ([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`
   ),
   toPairs,
-  filter((param) => param != null)
+  filter(param => param != null)
 );

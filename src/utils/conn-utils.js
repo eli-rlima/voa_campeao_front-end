@@ -6,7 +6,7 @@ import { HttpClient } from "./http-client-utils";
  * @param {Object} error - Error
  * @returns {undefined}
  */
-export const handleError = (error) => {
+export const handleError = error => {
   throw error;
 };
 
@@ -15,4 +15,7 @@ export const handleError = (error) => {
  *
  * @type {Object}
  */
-export const httpClientWeb = new HttpClient("localhost:8000", handleError);
+export const httpClientWeb = new HttpClient(
+  "http://localhost:8000",
+  handleError
+);

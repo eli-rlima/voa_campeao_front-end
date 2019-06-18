@@ -9,7 +9,7 @@ import { httpClientWeb } from "../utils/conn-utils";
  * @return {Function} The getViagem promise
  */
 
-export const getViagem = (params, sucess, error) =>
+export const getViagens = (params, sucess, error) =>
   httpClientWeb.get("/viagens", params, sucess, error);
 
 /**

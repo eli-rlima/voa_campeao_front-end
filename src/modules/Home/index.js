@@ -2,8 +2,8 @@ import "./index.css";
 
 import Navbar from "../Navbar";
 import React from "react";
-import Viagem from "./components/Viagem";
-import { getViagem } from "../../services/index";
+import Viagem from "./components/ViagemCard";
+import { getViagens } from "../../services/index";
 
 class Home extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Home extends React.Component {
     this.state = { viagens: [] };
   }
   componentDidMount() {
-    getViagem()
+    getViagens()
       .then(sucess => this.setState({ viagens: sucess.data.results }))
       .catch(err => console.log(err));
   }
@@ -20,10 +20,10 @@ class Home extends React.Component {
     return (
       <div>
         <Navbar />
-        <h1>Shopping List for DAle</h1>
-        <ul className="viagensInfo">
-          {this.state.viagens.map((item, index) => (
-            <Viagem viagem={item} />
+        <h1>Voa Campeão</h1>
+        <ul>
+          {this.state.viagens.map((viagem, index) => (
+            <Viagem viagem={viagem} />
           ))}
         </ul>
       </div>

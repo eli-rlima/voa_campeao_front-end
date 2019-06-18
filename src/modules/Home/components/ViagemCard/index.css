@@ -1,0 +1,15 @@
+body {
+  background: #fafafa;
+  font: 14px Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+.itemViagem {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-left: 20px;
+  margin-top: 20px;
+  max-width: 300px;
+  display: inline-flex;
+  flex-direction: column;
+}

@@ -1,8 +1,9 @@
 import "./index.css";
 
+import CommentCard from "./components/CommentCard";
 import Navbar from "../Navbar";
 import React from "react";
-import Viagem from "./components/ViagemCard";
+import ViagemCard from "./components/ViagemCard";
 import { getViagens } from "../../services/index";
 
 class Home extends React.Component {
@@ -19,11 +20,18 @@ class Home extends React.Component {
     console.log(this.state);
     return (
       <div>
-        <Navbar />
-        <h1>Voa Campeão</h1>
+        <div classeName="title">
+          <Navbar />
+          <h1>Voa Campeão</h1>
+        </div>
         <ul>
           {this.state.viagens.map((viagem, index) => (
-            <Viagem viagem={viagem} />
+            <ViagemCard viagem={viagem} />
+          ))}
+        </ul>
+        <ul>
+          {this.state.viagens.map((viagem, index) => (
+            <CommentCard viagem={viagem} />
           ))}
         </ul>
       </div>

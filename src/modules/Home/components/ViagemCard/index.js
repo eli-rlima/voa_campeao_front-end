@@ -2,13 +2,13 @@ import "./index.css";
 
 import React from "react";
 
-const Viagem = ({ viagem, usuario }) => (
+const ViagemCard = ({ viagem }) => (
   <div className="itemViagem">
     <div>
-      O usuário irá competir na competição, na modalidade{" "}
+      O {viagem.atleta.nome} irá competir na {viagem.competicao}, na modalidade{" "}
       {viagem.modalidade_comp}, ajude-o a ganhar mais essa medalha!
     </div>
   </div>
 );
 
-export default Viagem;
+export default ViagemCard;

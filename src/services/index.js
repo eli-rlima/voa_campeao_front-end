@@ -10,7 +10,7 @@ import { httpClientWeb } from "../utils/conn-utils";
  */
 
 export const getViagens = (params, sucess, error) =>
-  httpClientWeb.get("/viagens/", params, sucess, error);
+  httpClientWeb.get("/viagensop/", params, sucess, error);
 
 /**
  * Get Viagens

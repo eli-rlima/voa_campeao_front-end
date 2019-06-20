@@ -5,8 +5,10 @@ import React from "react";
 const ViagemCard = ({ viagem }) => (
   <div className="itemViagem">
     <div>
-      O {viagem.atleta.nome} irá competir na {viagem.competicao}, na modalidade{" "}
-      {viagem.modalidade_comp}, ajude-o a ganhar mais essa medalha!
+      O <span className="nomeAtleta">{viagem.atleta.nome}</span> irá competir na{" "}
+      <span className="nomeCompeticao">{viagem.competicao}</span>, na modalidade{" "}
+      <span className="nomeModalidade">{viagem.modalidade_comp}</span>, ajude-o
+      a ganhar mais essa medalha!
     </div>
   </div>
 );

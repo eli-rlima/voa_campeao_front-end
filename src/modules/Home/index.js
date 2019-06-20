@@ -17,9 +17,8 @@ class Home extends React.Component {
       .catch(err => console.log(err));
   }
   render() {
-    console.log(this.state);
     return (
-      <div>
+      <div className="center">
         <div classeName="title">
           <Navbar />
           <h1>Voa Campeão</h1>

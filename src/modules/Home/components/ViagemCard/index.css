@@ -16,3 +16,17 @@ body {
   align-items: center;
   text-align: justify;
 }
+
+.nomeAtleta {
+  background-color: springgreen;
+  max-width: 123px;
+}
+
+.nomeCompeticao {
+  background-color: springgreen;
+  max-width: 123px;
+}
+.nomeModalidade {
+  background-color: springgreen;
+  max-width: 123px;
+}

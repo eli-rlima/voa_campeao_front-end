@@ -24,12 +24,12 @@ class Home extends React.Component {
           <h1>Voa Campeão</h1>
         </div>
         <ul>
-          {this.state.viagens.map((viagem, index) => (
+          {this.state.viagens.slice(0, 6).map((viagem, index) => (
             <ViagemCard viagem={viagem} />
           ))}
         </ul>
         <ul>
-          {this.state.viagens.map((viagem, index) => (
+          {this.state.viagens.slice(0, 3).map((viagem, index) => (
             <CommentCard viagem={viagem} />
           ))}
         </ul>

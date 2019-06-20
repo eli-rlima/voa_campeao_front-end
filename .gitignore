@@ -208,7 +208,7 @@ last-commit-exit-code
 .DS_Store
 .env
 npm-debug.log*
-package-lock.json
+package-lock.json*
 yarn-debug.log*
 yarn-error.log*
 yarn.lock

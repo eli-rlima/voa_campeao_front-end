@@ -19,7 +19,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="center">
-        <div classeName="title">
+        <div>
           <Navbar />
           <h1>Voa Campeão</h1>
         </div>

@@ -18,8 +18,7 @@ img {
     width: 70%;
     height: 200px;
     margin: auto;
-    padding: 2px;
-    border-top: 2px solid gray;
+    padding: 10px;
 }
 
 .one {
@@ -37,4 +36,8 @@ img {
 h2 {
     font-weight: 100;
     font-size: 35px;
+}
+
+span {
+    background-color: springgreen;
 }

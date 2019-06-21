@@ -1,4 +1,5 @@
 import AtletaCard from "./components/AtletaCard";
+import InfoCompCard from "./components/InfoCompCard";
 import Navbar from "../Navbar";
 import React from "react";
 import { getViagens } from "../../services/index";
@@ -24,6 +25,11 @@ class Viagem extends React.Component {
         <ul>
           {this.state.viagens.map((viagem, index) => (
             <AtletaCard viagem={viagem} />
+          ))}
+        </ul>
+        <ul>
+          {this.state.viagens.map((viagem, index) => (
+            <InfoCompCard viagem={viagem} />
           ))}
         </ul>
       </div>

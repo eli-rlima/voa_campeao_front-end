@@ -23,16 +23,27 @@ class Home extends React.Component {
           <Navbar />
           <h1>Voa Campeão</h1>
         </div>
-        <ul>
-          {this.state.viagens.slice(0, 6).map((viagem, index) => (
-            <ViagemCard viagem={viagem} />
-          ))}
-        </ul>
-        <ul>
-          {this.state.viagens.slice(0, 3).map((viagem, index) => (
-            <CommentCard viagem={viagem} />
-          ))}
-        </ul>
+        <div className="viagens__cards">
+          <span className="viagens">Viagens</span>
+          <span className="mais_viagens">Ver mais viagens</span>
+          <ul className="viagem__card">
+            {this.state.viagens.slice(0, 3).map((viagem, index) => (
+              <ViagemCard viagem={viagem} />
+            ))}
+          </ul>
+          <ul className="viagem__card">
+            {this.state.viagens.slice(3, 6).map((viagem, index) => (
+              <ViagemCard viagem={viagem} />
+            ))}
+          </ul>
+        </div>
+        <div>
+          <ul className="comment_card">
+            {this.state.viagens.slice(0, 3).map((viagem, index) => (
+              <CommentCard viagem={viagem} />
+            ))}
+          </ul>
+        </div>
       </div>
     );
   }

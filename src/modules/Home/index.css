@@ -3,3 +3,25 @@ body {
   font: 14px Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased !important;
 }
+
+.viagem__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comment_card {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viagens {
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+
+.mais_viagens {
+  margin-left: 830px;
+}

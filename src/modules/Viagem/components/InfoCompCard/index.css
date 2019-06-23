@@ -1,43 +1,16 @@
-img {
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    float: left;
-    overflow: auto;
-    cursor: pointer;
-}
-
-.image {
-    height: auto;
-    border: 1px solid gainsboro;
-    display: inline-block;
-}
-
-.container {
-    width: 70%;
-    height: 200px;
-    margin: auto;
-    padding: 10px;
-}
-
-.one {
-    width: 20%;
-    float: left;
-    padding: 10px;
+.container_info {
+  width: 70%;
+  height: 200px;
+  margin: auto;
+  padding: 10px;
+  border-top: 2px solid gray;
 }
 
 .two {
-    margin-left: 15%;
-    height: 200px;
-
+  margin-left: 15%;
+  height: 200px;
 }
 
-h2 {
-    font-weight: 100;
-    font-size: 35px;
-}
-
-span {
-    background-color: springgreen;
+.text_color {
+  background-color: springgreen;
 }

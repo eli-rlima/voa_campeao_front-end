@@ -22,14 +22,13 @@ class Home extends React.Component {
       <div className="center">
         <div>
           <Navbar />
-          <h1>Voa Campeão</h1>
         </div>
         <div className="marta_slide">
           <img src={Marta} alt="Slide" className="marta_image" />
         </div>
         <div className="viagens__cards">
           <div>
-            <span className="viagens">Viagens</span>
+            <span className="viagens">Patrocine:</span>
             <a className="mais_viagens" href="/viagem">
               Ver mais viagens
             </a>

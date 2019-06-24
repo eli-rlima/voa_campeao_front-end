@@ -1,9 +1,3 @@
-body {
-  background: #fafafa;
-  font: 14px Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased !important;
-}
-
 .marta_slide {
   display: flex;
   align-items: center;

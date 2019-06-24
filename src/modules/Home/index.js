@@ -1,6 +1,7 @@
 import "./index.css";
 
 import CommentCard from "./components/CommentCard";
+import Marta from "../../images/marta.jpg";
 import Navbar from "../Navbar";
 import React from "react";
 import ViagemCard from "./components/ViagemCard";
@@ -23,9 +24,16 @@ class Home extends React.Component {
           <Navbar />
           <h1>Voa Campeão</h1>
         </div>
+        <div className="marta_slide">
+          <img src={Marta} alt="Slide" className="marta_image" />
+        </div>
         <div className="viagens__cards">
-          <span className="viagens">Viagens</span>
-          <span className="mais_viagens">Ver mais viagens</span>
+          <div>
+            <span className="viagens">Viagens</span>
+            <a className="mais_viagens" href="/viagem">
+              Ver mais viagens
+            </a>
+          </div>
           <ul className="viagem__card">
             {this.state.viagens.slice(0, 3).map((viagem, index) => (
               <ViagemCard viagem={viagem} />

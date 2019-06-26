@@ -23,19 +23,21 @@ Para rodar o projeto é necessário ter acesso ao projeto do backend, caso não 
    ```pyhton
    python manage.py runserver
    ```
-   (obs.: se você estiver em ambiente Linux, rode os comandos substituindo python por python3
+   (Obs.: se você estiver em ambiente Linux, rode os comandos substituindo python por python3)
   ### Frontend
  - Clone este projeto em sua máquina a apartir da branch Development
  - Rode as seguintes instruções via terminal:
    ```js
    npm install
    ```
-   - Aguarde a instalação das dependências do projeto (pode demorar). Após a instalação é possível rodar projeto:
- - Rode a seguinte instrução:
+ - Aguarde a instalação das dependências do projeto (pode demorar).
+ - Após a instalação, rode a seguinte instrução:
    ```js
    npm start
    ```
  - Abrirá uma aba no seu navegador padrão com o endereço http:\\localhost:3000 (é necessário que o projeto do banckend esteja rodando em segundo plano)
+ 
+##### Jamais, de maneira nenhuma, de modo algum, suba algo na brach Development ou Master sem comunicar a equipe de desenvolvimento, crie uma branch a partir da Development para fazer qualquer inserção desejada e crie um PR para solicitar merge.
  
 ================================================================
 

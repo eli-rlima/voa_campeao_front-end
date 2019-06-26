@@ -11,6 +11,7 @@ Para rodar o projeto é necessário ter acesso ao projeto do backend, caso não 
 
 ## Como rodar: 
   ### Backend
+ - Clone este projeto em sua máquina a apartir da branch development
  - Crie um BD local com o nome: voa_campeao. (O usuário root do seu MySQL tem estar com a senha 'root')
  - Entre no projeto do backend e rode as seguintes instruções via terminal:
    ```python
@@ -24,8 +25,8 @@ Para rodar o projeto é necessário ter acesso ao projeto do backend, caso não 
    ```
    (obs.: se você estiver em ambiente Linux, rode os comandos substituindo python por python3
   ### Frontend
- - clone este projeto em sua máquina a apartir da branch Development
- - rode as seguintes instruções via terminal:
+ - Clone este projeto em sua máquina a apartir da branch Development
+ - Rode as seguintes instruções via terminal:
    ```js
    npm install
    ```

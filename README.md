@@ -35,7 +35,7 @@ Para rodar o projeto é necessário ter acesso ao projeto do backend, caso não 
    ```js
    npm start
    ```
- - Abrirá uma aba no seu navegador padrão com o endereço http:\\localhost:3000 (é necessário que o projeto do banckend esteja rodando em segundo plano)
+ - Abrirá uma aba no seu navegador padrão com o endereço http://localhost:3000 (é necessário que o projeto do banckend esteja rodando em segundo plano)
  
 ##### Jamais, de maneira nenhuma, suba algo na branch Development ou Master sem comunicar a equipe de desenvolvimento, crie uma branch a partir da Development para fazer qualquer inserção desejada e crie um PR para solicitar merge.
  

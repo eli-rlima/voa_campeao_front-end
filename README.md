@@ -11,7 +11,7 @@ Para rodar o projeto é necessário ter acesso ao projeto do backend, caso não 
 
 ## Como rodar: 
   ### Backend
- - Crie um BD local com o nome: voacampeao. (O usuário root do seu MySQL tem estar com a senha 'root')
+ - Crie um BD local com o nome: voa_campeao. (O usuário root do seu MySQL tem estar com a senha 'root')
  - Entre no projeto do backend e rode as seguintes instruções via terminal:
    ```python
    python manage.py makemigrations

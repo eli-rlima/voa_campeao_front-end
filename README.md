@@ -1,3 +1,43 @@
+# Documento de configuração do projeto
+
+Para rodar o projeto é necessário ter acesso ao projeto do backend, caso não tenha, solicite!
+
+## Requisitos funcionais:
+ - Python 3.7
+ - Django 2.*
+ - NodeJs
+ - ReactJs
+ - MySQL
+
+## Como rodar: 
+  ### Backend
+ - Crie um BD local com o nome: voacampeao. (O usuário root do seu MySQL tem estar com a senha 'root')
+ - Entre no projeto do backend e rode as seguintes instruções via terminal:
+   ```python
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+   Esses comandos vão criar a estrutura do BD.
+ - Agora é possível rodar o projeto, use:
+   ```pyhton
+   python manage.py runserver
+   ```
+   (obs.: se você estiver em ambiente Linux, rode os comandos substituindo python por python3
+  ### Frontend
+ - clone este projeto em sua máquina a apartir da branch Development
+ - rode as seguintes instruções via terminal:
+   ```js
+   npm install
+   ```
+   - Aguarde a instalação das dependências do projeto (pode demorar). Após a instalação é possível rodar projeto:
+ - Rode a seguinte instrução:
+   ```js
+   npm start
+   ```
+ - Abrirá uma aba no seu navegador padrão com o endereço http:\\localhost:3000 (é necessário que o projeto do banckend esteja rodando em segundo plano)
+ 
+================================================================
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

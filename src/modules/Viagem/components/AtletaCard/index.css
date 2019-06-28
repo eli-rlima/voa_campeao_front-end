@@ -21,7 +21,7 @@
   margin: auto;
   padding: 2px;
   border-top: 2px solid gray;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .one {
@@ -37,5 +37,5 @@
 
 .detail_atleta {
   font-weight: 100;
-  font-size: 35px;
+  font-size: 30px;
 }

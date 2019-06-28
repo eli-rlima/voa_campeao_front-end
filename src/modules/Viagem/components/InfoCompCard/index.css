@@ -1,8 +1,9 @@
 .container_info {
   width: 70%;
-  height: 200px;
+  height: 30px;
   margin: auto;
   padding: 10px;
+  font-size: 15px;
   border-top: 2px solid gray;
 }
 

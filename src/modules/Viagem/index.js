@@ -1,4 +1,6 @@
 import AtletaCard from "./components/AtletaCard";
+import ButtonCard from "./components/ButtonCard";
+import DescricaoCard from "./components/DescricaoCard";
 import InfoCompCard from "./components/InfoCompCard";
 import Navbar from "../Navbar";
 import React from "react";
@@ -30,6 +32,16 @@ class Viagem extends React.Component {
         <ul>
           {this.state.viagens.map((viagem, index) => (
             <InfoCompCard viagem={viagem} />
+          ))}
+        </ul>
+        <ul>
+          {this.state.viagens.map((viagem, index) => (
+            <DescricaoCard viagem={viagem} />
+          ))}
+        </ul>
+        <ul>
+          {this.state.viagens.map((viagem, index) => (
+            <ButtonCard viagem={viagem} />
           ))}
         </ul>
       </div>

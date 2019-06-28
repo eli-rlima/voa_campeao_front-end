@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 
 class Navbar extends React.Component {
@@ -16,7 +17,7 @@ class Navbar extends React.Component {
           crossorigin="anonymous"
         />
         <script
-          src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          src="https://cdnjs.cloudflare.comLinkjax/libs/popper.js/1.14.7/umd/popper.min.js"
           integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
           crossorigin="anonymous"
         />
@@ -26,26 +27,26 @@ class Navbar extends React.Component {
           crossorigin="anonymous"
         />
         <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-          <a class="my-0 mr-md-auto font-weight-normal" href="/">
+          <Link class="my-0 mr-md-auto font-weight-normal" to="/">
             Voa Campeão
-          </a>
+          </Link>
           <nav class="my-2 my-md-0 mr-md-3">
-            <a class="p-2 text-dark" href="#">
+            <Link class="p-2 text-dark" to="/viagem">
               peça ajuda
-            </a>
-            <a class="p-2 text-dark" href="#">
+            </Link>
+            <Link class="p-2 text-dark" to="/ajude">
               ajude um atleta
-            </a>
-            <a class="p-2 text-dark" href="#">
+            </Link>
+            <Link class="p-2 text-dark" to="/suporte">
               suporte
-            </a>
-            <a class="p-2 text-dark" href="#">
+            </Link>
+            <Link class="p-2 text-dark" to="/depoimento">
               depoimentos
-            </a>
+            </Link>
           </nav>
-          <a class="btn btn-outline-success my-2 my-sm-0" href="#">
+          <button class="btn btn-outline-success my-2 my-sm-0" href="#">
             Login
-          </a>
+          </button>
         </div>
       </body>
     );

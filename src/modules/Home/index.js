@@ -1,6 +1,7 @@
 import "./index.css";
 
 import CommentCard from "./components/CommentCard";
+import { Link } from "react-router-dom";
 import Marta from "../../images/marta.jpg";
 import Navbar from "../Navbar";
 import React from "react";
@@ -18,6 +19,7 @@ class Home extends React.Component {
       .catch(err => console.log(err));
   }
   render() {
+    console.log(this.state.viagens);
     return (
       <div className="center">
         <div>
@@ -33,23 +35,33 @@ class Home extends React.Component {
               Ver mais viagens
             </a>
           </div>
-          <ul className="viagem__card">
+          <div className="viagem__card">
             {this.state.viagens.slice(0, 3).map((viagem, index) => (
-              <ViagemCard viagem={viagem} />
+              <a href="">
+                <div>
+                  <Link to={`/viagem/${viagem.id}`}>
+                    <ViagemCard viagem={viagem} />
+                  </Link>
+                </div>
+              </a>
             ))}
-          </ul>
-          <ul className="viagem__card">
+          </div>
+          <div className="viagem__card">
             {this.state.viagens.slice(3, 6).map((viagem, index) => (
-              <ViagemCard viagem={viagem} />
+              <a href="">
+                <div>
+                  <ViagemCard viagem={viagem} />
+                </div>
+              </a>
             ))}
-          </ul>
+          </div>
         </div>
         <div>
-          <ul className="comment_card">
+          <div className="comment_card">
             {this.state.viagens.slice(0, 3).map((viagem, index) => (
               <CommentCard viagem={viagem} />
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     );

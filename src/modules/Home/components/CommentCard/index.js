@@ -4,11 +4,11 @@ import React from "react";
 import profile from "../../../../icons/profile.png";
 
 const CommentCard = ({ viagem }) => (
-  <div className="itemViagem1">
-    <div className="container">
-      <img src={profile} alt="Avatar" className="image" />
-      <div className="middle">
-        <div className="text">{viagem.atleta.nome}</div>
+  <div className="commentcard__item">
+    <div className="commentcard__container">
+      <img src={profile} alt="Avatar" className="commentcard_image" />
+      <div className="commentcard__middle">
+        <div className="commentcard__text">{viagem.atleta.nome}</div>
       </div>
     </div>
     <h4>{viagem.atleta.nome}</h4>

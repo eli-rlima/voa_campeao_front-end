@@ -2,7 +2,6 @@ import AtletaCard from "./components/AtletaCard";
 import ButtonCard from "./components/ButtonCard";
 import DescricaoCard from "./components/DescricaoCard";
 import InfoCompCard from "./components/InfoCompCard";
-import Navbar from "../Navbar";
 import React from "react";
 import { connect } from "react-redux";
 
@@ -12,7 +11,6 @@ class Viagem extends React.Component {
     const { viagem } = this.props;
     return (
       <div>
-        <Navbar />
         {viagem && (
           <div>
             <div>

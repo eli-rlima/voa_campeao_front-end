@@ -4,7 +4,6 @@ import { setSelectedViagem, setViagens } from "../../actions";
 
 import CommentCard from "./components/CommentCard";
 import Marta from "../../images/marta.jpg";
-import Navbar from "../Navbar";
 import React from "react";
 import ViagemCard from "./components/ViagemCard";
 import { connect } from "react-redux";
@@ -26,9 +25,6 @@ class Home extends React.Component {
     const { viagens } = this.props;
     return (
       <div>
-        <div>
-          <Navbar />
-        </div>
         <div className="marta_slide">
           <img src={Marta} alt="Slide" className="marta_image" />
         </div>

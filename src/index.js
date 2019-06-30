@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Construcao from "./modules/Construcao";
 import Home from "./modules/Home";
+import Navbar from "./modules/Navbar";
 import { Provider } from "react-redux";
 import React from "react";
 import Store from "./store";
@@ -11,6 +12,7 @@ import { render } from "react-dom";
 render(
   <Provider store={Store}>
     <BrowserRouter>
+      <Navbar />
       <Switch>
         <Route exact path={"/"} component={Home} />
         <Route exact path={"/viagem"} component={Viagem} />

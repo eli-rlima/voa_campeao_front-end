@@ -1,4 +1,4 @@
-.container_desc {
+.viagem__container-desc {
   width: 70%;
   height: 30px;
   margin: auto;
@@ -7,6 +7,6 @@
   font-size: 15px;
 }
 
-.two {
+.viagem__desc {
   padding: 20px;
 }

@@ -3,8 +3,8 @@ import "./index.css";
 import React from "react";
 
 const InfoCompCard = ({ viagem }) => (
-  <div className="container_info">
-    <div classeName="two">
+  <div className="viagem__container-info">
+    <div classeName="viagem__info">
       A competição de{" "}
       <span className="text_color">{viagem.modalidade_comp}</span> ocorrerá
       entre os dias <span className="text_color">{viagem.data_ida}</span> e{" "}

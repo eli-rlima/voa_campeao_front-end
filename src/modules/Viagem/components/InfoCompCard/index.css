@@ -1,4 +1,4 @@
-.container_info {
+.viagem__container-info {
   width: 70%;
   height: 30px;
   margin: auto;
@@ -7,7 +7,7 @@
   border-top: 2px solid gray;
 }
 
-.two {
+.viagem__info {
   margin-left: 15%;
   height: 200px;
 }

@@ -31,7 +31,7 @@ class Navbar extends React.Component {
             Voa Campeão
           </Link>
           <nav class="my-2 my-md-0 mr-md-3">
-            <Link class="p-2 text-dark" to="/viagem">
+            <Link class="p-2 text-dark" to="/viagens">
               peça ajuda
             </Link>
             <Link class="p-2 text-dark" to="/ajude">

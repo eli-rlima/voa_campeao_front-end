@@ -8,6 +8,7 @@ import { Provider } from "react-redux";
 import React from "react";
 import Store from "./store";
 import Viagem from "./modules/Viagem";
+import Viagens from "./modules/Viagens";
 import { render } from "react-dom";
 
 render(
@@ -20,6 +21,7 @@ render(
         <Route exact path={"/depoimento"} component={Construcao} />
         <Route exact path={"/suporte"} component={Construcao} />
         <Route exact path={"/ajude"} component={Construcao} />
+        <Route exact path={"/viagens"} component={Viagens} />
       </Switch>
       <Footer />
     </BrowserRouter>

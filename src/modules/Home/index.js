@@ -13,7 +13,7 @@ import { getViagens } from "../../services/index";
 class Home extends React.Component {
   componentDidMount() {
     getViagens()
-      .then(sucess => this.setViagens(sucess.data.results))
+      .then(sucess => this.props.setViagens(sucess.data.results))
       .catch(err => console.log(err));
   }
 
@@ -25,7 +25,7 @@ class Home extends React.Component {
   render() {
     const { viagens } = this.props;
     return (
-      <div className="center">
+      <div>
         <div>
           <Navbar />
         </div>
@@ -33,11 +33,8 @@ class Home extends React.Component {
           <img src={Marta} alt="Slide" className="marta_image" />
         </div>
         <div className="viagens__cards">
-          <div>
-            <span className="viagens">Patrocine:</span>
-            <a className="mais_viagens" href="/viagem">
-              Ver mais viagens
-            </a>
+          <div className="viagem__cabeçalho">
+            <span className="viagens__patrocine">Patrocine:</span>
           </div>
           <div className="viagem__card">
             {viagens.slice(0, 3).map((viagem, index) => (
@@ -57,7 +54,7 @@ class Home extends React.Component {
           </div>
         </div>
         <div>
-          <div className="comment_card">
+          <div className="viagem__comment-card">
             {viagens.slice(0, 3).map((viagem, index) => (
               <CommentCard viagem={viagem} />
             ))}

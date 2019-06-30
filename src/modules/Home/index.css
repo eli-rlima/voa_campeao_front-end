@@ -5,6 +5,13 @@
   margin-left: 50px;
 }
 
+.viagem__cabeçalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 190px;
+  margin-top: 20px;
+}
+
 .marta_image {
   max-width: 1000px;
 }
@@ -15,7 +22,7 @@
   justify-content: center;
 }
 
-.comment_card {
+.viagem__comment-card {
   margin-top: 60px;
   display: flex;
   align-items: center;

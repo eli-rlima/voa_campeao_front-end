@@ -11,6 +11,12 @@
   font-size: 12px;
 }
 
+.itemViagem:hover {
+  cursor: pointer;
+  background-color: rgb(169, 245, 207, 0.5);
+  margin-top: 10px;
+}
+
 .texto {
   text-align: justify;
   text-decoration: none;

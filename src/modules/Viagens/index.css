@@ -1,10 +1,11 @@
 .viagens__card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  padding: 40px 0;
 }
 .viagens__card1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 1 0 33%; /* explanation below */
+  margin: 5px;
+  height: 100px;
 }

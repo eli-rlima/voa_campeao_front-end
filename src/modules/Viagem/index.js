@@ -4,49 +4,40 @@ import DescricaoCard from "./components/DescricaoCard";
 import InfoCompCard from "./components/InfoCompCard";
 import Navbar from "../Navbar";
 import React from "react";
-import { getViagens } from "../../services/index";
+import { connect } from "react-redux";
 
 class Viagem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { viagens: [] };
-  }
-  componentDidMount() {
-    getViagens()
-      .then(sucess => this.setState({ viagens: sucess.data.results }))
-      .catch(err => console.log(err));
-  }
   render() {
-    console.log(this.state);
+    console.log(this.props.viagem);
+    const { viagem } = this.props;
     return (
       <div>
-        <div classeName="title">
-          <Navbar />
-          <h1>Voa Campeão</h1>
-        </div>
-        <ul>
-          {this.state.viagens.map((viagem, index) => (
-            <AtletaCard viagem={viagem} />
-          ))}
-        </ul>
-        <ul>
-          {this.state.viagens.map((viagem, index) => (
-            <InfoCompCard viagem={viagem} />
-          ))}
-        </ul>
-        <ul>
-          {this.state.viagens.map((viagem, index) => (
-            <DescricaoCard viagem={viagem} />
-          ))}
-        </ul>
-        <ul>
-          {this.state.viagens.map((viagem, index) => (
-            <ButtonCard viagem={viagem} />
-          ))}
-        </ul>
+        <Navbar />
+        {viagem && (
+          <div>
+            <div>
+              <AtletaCard viagem={viagem} />
+            </div>
+            <div>
+              <InfoCompCard viagem={viagem} />
+            </div>
+            <div>
+              <DescricaoCard viagem={viagem} />
+            </div>
+            <div>
+              <ButtonCard />
+            </div>
+          </div>
+        )}
       </div>
     );
   }
 }
 
-export default Viagem;
+const mapStateToProps = state => {
+  return {
+    viagem: state.viagens.selectedViagem
+  };
+};
+
+export default connect(mapStateToProps)(Viagem);

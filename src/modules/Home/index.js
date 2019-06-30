@@ -1,25 +1,29 @@
 import "./index.css";
 
+import { setSelectedViagem, setViagens } from "../../actions";
+
 import CommentCard from "./components/CommentCard";
-import { Link } from "react-router-dom";
 import Marta from "../../images/marta.jpg";
 import Navbar from "../Navbar";
 import React from "react";
 import ViagemCard from "./components/ViagemCard";
+import { connect } from "react-redux";
 import { getViagens } from "../../services/index";
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { viagens: [] };
-  }
   componentDidMount() {
     getViagens()
-      .then(sucess => this.setState({ viagens: sucess.data.results }))
+      .then(sucess => this.setViagens(sucess.data.results))
       .catch(err => console.log(err));
   }
+
+  handleCardClick = Viagem => {
+    this.props.setSelectedViagem(Viagem);
+    this.props.history.push("/viagem");
+  };
+
   render() {
-    console.log(this.state.viagens);
+    const { viagens } = this.props;
     return (
       <div className="center">
         <div>
@@ -36,29 +40,25 @@ class Home extends React.Component {
             </a>
           </div>
           <div className="viagem__card">
-            {this.state.viagens.slice(0, 3).map((viagem, index) => (
-              <a href="">
-                <div>
-                  <Link to={`/viagem/${viagem.id}`}>
-                    <ViagemCard viagem={viagem} />
-                  </Link>
-                </div>
-              </a>
+            {viagens.slice(0, 3).map((viagem, index) => (
+              <ViagemCard
+                viagem={viagem}
+                onClick={() => this.handleCardClick(viagem)}
+              />
             ))}
           </div>
           <div className="viagem__card">
-            {this.state.viagens.slice(3, 6).map((viagem, index) => (
-              <a href="">
-                <div>
-                  <ViagemCard viagem={viagem} />
-                </div>
-              </a>
+            {viagens.slice(3, 6).map((viagem, index) => (
+              <ViagemCard
+                viagem={viagem}
+                onClick={() => this.handleCardClick(viagem)}
+              />
             ))}
           </div>
         </div>
         <div>
           <div className="comment_card">
-            {this.state.viagens.slice(0, 3).map((viagem, index) => (
+            {viagens.slice(0, 3).map((viagem, index) => (
               <CommentCard viagem={viagem} />
             ))}
           </div>
@@ -68,4 +68,13 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+const mapStateToProps = state => {
+  return {
+    viagens: state.viagens.viagens
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  { setViagens, setSelectedViagem }
+)(Home);

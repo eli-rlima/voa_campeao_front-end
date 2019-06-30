@@ -5,8 +5,8 @@ import profile from "../../../../icons/profile.png";
 
 let artigo = "";
 let ajuda = "";
-const ViagemCard = ({ viagem }) => (
-  <div className="itemViagem">
+const ViagemCard = ({ viagem, onClick }) => (
+  <div className="itemViagem" onClick={onClick}>
     <div>
       <img src={profile} className="perfil" alt="perfil" />
       <div className="texto">

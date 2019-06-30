@@ -1,8 +1,12 @@
 .container_desc {
-    width: 70%;
-    height: 30px;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    font-size: 15px;
+  width: 70%;
+  height: 30px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.two {
+  padding: 20px;
 }

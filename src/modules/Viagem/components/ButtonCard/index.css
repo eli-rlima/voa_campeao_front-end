@@ -1,27 +1,24 @@
 .container_button {
-    width: 70%;
-    height: 30px;
-    margin: auto;
-    margin-top: 50px;
-    padding: 10px;
-    text-align: center;
-    font-size: 15px;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
 }
 
 .btnn {
-    text-align: center;
-    border-radius: 7px;
-    border: none;
-    background-color: springgreen;
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 80px;
-    padding-left: 80px;
-    cursor: pointer;
+  text-align: center;
+  border-radius: 7px;
+  border: none;
+  background-color: springgreen;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 80px;
+  padding-left: 80px;
+  cursor: pointer;
 }
 
 .btnn:active {
-    position: relative;
-    top: 1px;
+  position: relative;
+  top: 1px;
 }

@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Construcao from "./modules/Construcao";
+import Footer from "./modules/Footer";
 import Home from "./modules/Home";
 import Navbar from "./modules/Navbar";
 import { Provider } from "react-redux";
@@ -20,6 +21,7 @@ render(
         <Route exact path={"/suporte"} component={Construcao} />
         <Route exact path={"/ajude"} component={Construcao} />
       </Switch>
+      <Footer />
     </BrowserRouter>
   </Provider>,
   document.getElementById("root")

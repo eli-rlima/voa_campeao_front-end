@@ -19,9 +19,9 @@ render(
         <Route exact path={"/"} component={Home} />
         <Route exact path={"/viagem"} component={Viagem} />
         <Route exact path={"/depoimento"} component={Construcao} />
+        <Route exact path={"/cadastro"} component={Construcao} />
         <Route exact path={"/suporte"} component={Construcao} />
-        <Route exact path={"/ajude"} component={Construcao} />
-        <Route exact path={"/viagens"} component={Viagens} />
+        <Route exact path={"/ajude"} component={Viagens} />
       </Switch>
       <Footer />
     </BrowserRouter>

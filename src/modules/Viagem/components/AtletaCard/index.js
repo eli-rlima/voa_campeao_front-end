@@ -4,14 +4,14 @@ import React from "react";
 import profile from "../../../../icons/profile.png";
 
 const AtletaCard = ({ viagem }) => (
-  <div className="container_atleta">
-    <div className="one">
-      <img src={profile} alt="Avatar" className="image" />
+  <div className="viagem__container">
+    <div className="viagem__image">
+      <img src={profile} alt="Avatar" className="viagem__imagem-detalhe" />
     </div>
-    <div classeName="two">
-      <h2 className="detail_atleta"> {viagem.atleta.nome}</h2>
-      <h2 className="detail_atleta"> 25 anos</h2>
-      <h2 className="detail_atleta"> {viagem.modalidade_comp}</h2>
+    <div classeName="viagem__atleta">
+      <h2 className="viagem__detalhe-atleta"> {viagem.atleta.nome}</h2>
+      <h2 className="viagem__detalhe-atleta"> 25 anos</h2>
+      <h2 className="viagem__detalhe-atleta"> {viagem.modalidade_comp}</h2>
     </div>
   </div>
 );

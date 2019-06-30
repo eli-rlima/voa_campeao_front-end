@@ -3,12 +3,10 @@ import "./index.css";
 import React from "react";
 
 const ButtonCard = () => (
-  <div className="container_button">
-    <div classeName="two">
-      <button className="btnn" type="button">
-        Patrocinar
-      </button>
-    </div>
+  <div className="viagem__container-button">
+    <button className="viagem__button" type="button">
+      Patrocinar
+    </button>
   </div>
 );
 export default ButtonCard;

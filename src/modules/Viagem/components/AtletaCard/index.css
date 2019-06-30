@@ -1,4 +1,4 @@
-.one {
+.viagem__image {
   vertical-align: middle;
   float: left;
   overflow: auto;
@@ -6,7 +6,7 @@
   margin-top: 15px;
 }
 
-.image {
+.viagem__imagem-detalhe {
   height: auto;
   border: 1px solid gainsboro;
   display: inline-block;
@@ -15,7 +15,7 @@
   border-radius: 50%;
 }
 
-.container_atleta {
+.viagem__container {
   width: 70%;
   height: 200px;
   margin: auto;
@@ -24,18 +24,13 @@
   margin-bottom: 30px;
 }
 
-.one {
-  width: 20%;
-  float: left;
-  padding: 10px;
-}
-
-.two {
+.viagem__atleta {
   margin-left: 15%;
   height: 200px;
 }
 
-.detail_atleta {
+.viagem__detalhe-atleta {
   font-weight: 100;
   font-size: 30px;
+  margin-top: 10px;
 }

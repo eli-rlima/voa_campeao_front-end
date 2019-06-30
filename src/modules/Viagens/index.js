@@ -26,7 +26,7 @@ class Viagens extends React.Component {
         <div className="viagens__ajude">
           <p>Ajude um atleta a voar mais alto!</p>
         </div>
-        <div className="viagens_all">
+        <div className="viagens__all">
           <div className="viagens__card">
             {viagens.map((viagem, index) => (
               <ViagemCard

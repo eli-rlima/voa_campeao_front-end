@@ -6,10 +6,10 @@ import profile from "../../../../icons/profile.png";
 let artigo = "";
 let ajuda = "";
 const ViagemCard = ({ viagem, onClick }) => (
-  <div className="itemViagem" onClick={onClick}>
+  <div className="viagemcard__item" onClick={onClick}>
     <div>
-      <img src={profile} className="perfil" alt="perfil" />
-      <div className="texto">
+      <img src={profile} className="viagem__perfil" alt="perfil" />
+      <div className="viagemcard__texto">
         {(() => {
           if (viagem.atleta.sexo === "M") {
             artigo = "O";
@@ -22,10 +22,12 @@ const ViagemCard = ({ viagem, onClick }) => (
             ajuda = "ajude";
           }
         })()}
-        {artigo} <span className="nomeAtleta">{viagem.atleta.nome}</span> irá
-        competir na <span className="nomeCompeticao">{viagem.competicao}</span>,
-        na modalidade{" "}
-        <span className="nomeModalidade">{viagem.modalidade_comp}</span>,{" "}
+        {artigo}{" "}
+        <span className="viagemcard__destaque">{viagem.atleta.nome}</span> irá
+        competir na{" "}
+        <span className="viagemcard__destaque">{viagem.competicao}</span>, na
+        modalidade{" "}
+        <span className="viagemcard__destaque">{viagem.modalidade_comp}</span>,{" "}
         {ajuda} a ganhar mais essa medalha!
       </div>
     </div>

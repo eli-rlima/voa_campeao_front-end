@@ -16,6 +16,7 @@
   padding-right: 80px;
   padding-left: 80px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .viagem__button:active {

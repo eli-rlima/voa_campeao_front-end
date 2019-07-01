@@ -22,4 +22,4 @@ export const getViagens = (params, sucess, error) =>
  */
 
 export const createViagem = (data, sucess, error) =>
-  httpClientWeb.post("/viagens", data, sucess, error);
+  httpClientWeb.post("/viagens/", data, sucess, error);

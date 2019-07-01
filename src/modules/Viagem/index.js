@@ -7,7 +7,6 @@ import { connect } from "react-redux";
 
 class Viagem extends React.Component {
   render() {
-    console.log(this.props.viagem);
     const { viagem } = this.props;
     return (
       <div>

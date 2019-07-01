@@ -10,7 +10,7 @@ import { getViagens } from "../../services/index";
 class Viagens extends React.Component {
   componentDidMount() {
     getViagens()
-      .then(sucess => this.props.setViagens(sucess.data.results))
+      .then(sucess => this.props.setViagens(sucess.data))
       .catch(err => console.log(err));
   }
 
@@ -28,12 +28,15 @@ class Viagens extends React.Component {
         </div>
         <div className="viagens__all">
           <div className="viagens__card">
-            {viagens.map((viagem, index) => (
-              <ViagemCard
-                viagem={viagem}
-                onClick={() => this.handleCardClick(viagem)}
-              />
-            ))}
+            {viagens
+              .slice(0, 15)
+              .reverse()
+              .map((viagem, index) => (
+                <ViagemCard
+                  viagem={viagem}
+                  onClick={() => this.handleCardClick(viagem)}
+                />
+              ))}
           </div>
         </div>
       </div>

@@ -2,14 +2,24 @@ import "./index.css";
 
 import Form from "./components/Form";
 import React from "react";
+import { connect } from "react-redux";
 import { createViagem } from "../../services";
+import moment from "moment";
+import { setSelectedViagem } from "../../actions";
 
 class ViagemForm extends React.Component {
   submit = values => {
-    // print the form values to the console
-    console.log(values);
-    createViagem(values)
-      .then(sucess => console.log(sucess))
+    const data = {
+      ...values,
+      atleta: "10334907411",
+      data_ida: moment(values.data_ida).format("YYYY-MM-DD"),
+      data_volta: moment(values.data_volta).format("YYYY-MM-DD")
+    };
+    createViagem(data)
+      .then(sucess => {
+        this.props.setSelectedViagem(sucess.data);
+        this.props.history.push("/viagem");
+      })
       .catch(err => console.log(err));
   };
   render() {
@@ -28,4 +38,7 @@ class ViagemForm extends React.Component {
   }
 }
 
-export default ViagemForm;
+export default connect(
+  null,
+  { setSelectedViagem }
+)(ViagemForm);

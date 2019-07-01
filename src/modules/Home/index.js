@@ -12,7 +12,7 @@ import { getViagens } from "../../services/index";
 class Home extends React.Component {
   componentDidMount() {
     getViagens()
-      .then(sucess => this.props.setViagens(sucess.data.results))
+      .then(sucess => this.props.setViagens(sucess.data))
       .catch(err => console.log(err));
   }
 

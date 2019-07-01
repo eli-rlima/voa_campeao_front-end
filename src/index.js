@@ -9,6 +9,7 @@ import React from "react";
 import Store from "./store";
 import Viagem from "./modules/Viagem";
 import ViagemForm from "./modules/ViagemForm";
+import Viagens from "./modules/Viagens";
 import { render } from "react-dom";
 
 render(
@@ -17,11 +18,11 @@ render(
       <Navbar />
       <Switch>
         <Route exact path={"/"} component={Home} />
-        <Route exact path={"/viagem"} component={ViagemForm} />
+        <Route exact path={"/viagem"} component={Viagem} />
         <Route exact path={"/depoimento"} component={Construcao} />
-        <Route exact path={"/cadastro"} component={Construcao} />
+        <Route exact path={"/cadastro"} component={ViagemForm} />
         <Route exact path={"/suporte"} component={Construcao} />
-        <Route exact path={"/ajude"} component={Viagem} />
+        <Route exact path={"/ajude"} component={Viagens} />
       </Switch>
       <Footer />
     </BrowserRouter>

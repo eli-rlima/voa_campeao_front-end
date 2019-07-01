@@ -17,6 +17,8 @@ const InfoCompCard = ({ viagem }) => (
         {moment(viagem.data_volta).format("DD/MM/YYYY")}
       </span>
       , na cidade de <span className="text_color">{viagem.destino}</span>.
+      <span> O {viagem.atleta.nome} vai sar da cidade</span>{" "}
+      <span>{viagem.atleta.origem}</span>.
     </div>
   </div>
 );

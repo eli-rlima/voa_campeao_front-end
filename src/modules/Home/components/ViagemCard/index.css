@@ -1,0 +1,37 @@
+.viagemcard__item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-left: 20px;
+  margin-top: 20px;
+  max-width: 320px;
+  display: inline-flex block;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.viagemcard__item:hover {
+  cursor: pointer;
+  background-color: rgb(169, 245, 207, 0.5);
+  margin-top: 10px;
+}
+
+.viagemcard__texto {
+  text-align: justify;
+  text-decoration: none;
+  color: black;
+}
+
+.viagem__perfil {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  float: left;
+  margin-right: 10px;
+}
+
+.viagemcard__destaque {
+  background-color: springgreen;
+  max-width: 123px;
+}

@@ -1,0 +1,51 @@
+.home__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.home__image {
+  width: 700px;
+  box-sizing: border-box;
+}
+
+.viagem__cabeçalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 190px;
+  margin-top: 20px;
+}
+
+.marta_image {
+  max-width: 1000px;
+}
+
+.viagem__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viagem__comment-card {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.viagens {
+  margin-top: 30px;
+  margin-right: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mais_viagens {
+  margin-left: 830px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

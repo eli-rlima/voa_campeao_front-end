@@ -1,0 +1,54 @@
+.commentcard__item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 300px;
+  height: 270px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 13px;
+}
+.commentcard__container {
+  position: relative;
+  width: 50%;
+}
+
+.commentcard_image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.commentcard__middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.commentcard__container:hover .commentcard_image {
+  opacity: 0.3;
+}
+
+.commentcard__container:hover .commentcard__middle {
+  opacity: 1;
+}
+
+.commentcard__text {
+  background-color: springgreen;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}

@@ -1,5 +1,4 @@
-import { HttpClient } from './http-client-utils';
-
+import { HttpClient } from "./http-client-utils";
 
 /**
  * Handle error.
@@ -8,14 +7,15 @@ import { HttpClient } from './http-client-utils';
  * @returns {undefined}
  */
 export const handleError = error => {
-    throw error;
-  };
-  
-  /**
-   * Web Server HTTP client.
-   *
-   * @type {Object}
-   */
-  export const httpClientWeb = new HttpClient('localhost:3000', handleError);
-  
-  /**
+  throw error;
+};
+
+/**
+ * Web Server HTTP client.
+ *
+ * @type {Object}
+ */
+export const httpClientWeb = new HttpClient(
+  "http://localhost:8000",
+  handleError
+);

@@ -1,0 +1,25 @@
+.viagem__container-button {
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.viagem__button {
+  text-align: center;
+  border-radius: 7px;
+  border: none;
+  background-color: springgreen;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 80px;
+  padding-left: 80px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.viagem__button:active {
+  position: relative;
+  top: 1px;
+}

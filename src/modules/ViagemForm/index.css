@@ -1,0 +1,18 @@
+.Viagem-form {
+  display: grid;
+  justify-content: center;
+}
+
+.Viagem-form__form {
+  padding: 0 80px;
+}
+
+.Viagem-form__subtitle {
+  font-weight: 400;
+  color: gray;
+}
+
+.Viagem-form__title {
+  font-weight: 400;
+  color: gray;
+}

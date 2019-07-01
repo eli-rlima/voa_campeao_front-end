@@ -24,20 +24,18 @@ class ViagemForm extends React.Component {
   };
   render() {
     return (
-      <div>
-        <div className="Viagem-form">
-          <h1 className="Viagem-form__title">Cadastro de Viagem</h1>
-          <h4 className="Viagem-form__subtitle">
-            precisamos de algumas informações sobre a viagem, preencha os campos
-            abaixo:
-          </h4>
-        </div>
+      <div className="Viagem-form">
+        <h1 className="Viagem-form__title">Cadastro de Viagem</h1>
+        <h4 className="Viagem-form__subtitle">
+          precisamos de algumas informações sobre a viagem, preencha os campos
+          abaixo:
+        </h4>
+        <div className="Viagem-form__form" />
         <Form onSubmit={this.submit} />
       </div>
     );
   }
 }
-
 export default connect(
   null,
   { setSelectedViagem }

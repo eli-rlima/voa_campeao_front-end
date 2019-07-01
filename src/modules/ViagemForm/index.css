@@ -1,4 +1,9 @@
 .Viagem-form {
+  display: grid;
+  justify-content: center;
+}
+
+.Viagem-form__form {
   padding: 0 80px;
 }
 

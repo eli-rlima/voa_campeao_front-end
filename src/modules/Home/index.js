@@ -3,8 +3,8 @@ import "./index.css";
 import { setSelectedViagem, setViagens } from "../../actions";
 
 import CommentCard from "./components/CommentCard";
-import Marta from "../../images/marta.jpg";
 import React from "react";
+import Slide from "../../images/Rectangle.jpg";
 import ViagemCard from "./components/ViagemCard";
 import { connect } from "react-redux";
 import { getViagens } from "../../services/index";
@@ -25,8 +25,8 @@ class Home extends React.Component {
     const { viagens } = this.props;
     return (
       <div>
-        <div className="marta_slide">
-          <img src={Marta} alt="Slide" className="marta_image" />
+        <div className="home__slide">
+          <img src={Slide} alt="Slide" className="home__image" />
         </div>
         <div className="viagens__cards">
           <div className="viagem__cabeçalho">

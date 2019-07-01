@@ -1,8 +1,13 @@
-.marta_slide {
+.home__slide {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 50px;
+  margin-left: 15px;
+}
+
+.home__image {
+  width: 700px;
+  box-sizing: border-box;
 }
 
 .viagem__cabeçalho {

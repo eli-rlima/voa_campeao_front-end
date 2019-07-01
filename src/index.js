@@ -8,11 +8,7 @@ import { Provider } from "react-redux";
 import React from "react";
 import Store from "./store";
 import Viagem from "./modules/Viagem";
-<<<<<<< HEAD
-import Viagens from "./modules/Viagens";
-=======
 import ViagemForm from "./modules/ViagemForm";
->>>>>>> Feature|Cdastrando viagem
 import { render } from "react-dom";
 
 render(
@@ -25,11 +21,7 @@ render(
         <Route exact path={"/depoimento"} component={Construcao} />
         <Route exact path={"/cadastro"} component={Construcao} />
         <Route exact path={"/suporte"} component={Construcao} />
-<<<<<<< HEAD
-        <Route exact path={"/ajude"} component={Viagens} />
-=======
         <Route exact path={"/ajude"} component={Viagem} />
->>>>>>> Feature|Cdastrando viagem
       </Switch>
       <Footer />
     </BrowserRouter>

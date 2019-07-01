@@ -28,15 +28,12 @@ class Viagens extends React.Component {
         </div>
         <div className="viagens__all">
           <div className="viagens__card">
-            {viagens
-              .slice(0, 15)
-              .reverse()
-              .map((viagem, index) => (
-                <ViagemCard
-                  viagem={viagem}
-                  onClick={() => this.handleCardClick(viagem)}
-                />
-              ))}
+            {viagens.reverse().map((viagem, index) => (
+              <ViagemCard
+                viagem={viagem}
+                onClick={() => this.handleCardClick(viagem)}
+              />
+            ))}
           </div>
         </div>
       </div>

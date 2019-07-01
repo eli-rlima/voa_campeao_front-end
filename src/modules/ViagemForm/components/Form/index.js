@@ -33,7 +33,7 @@ let Form = props => {
       <Row>
         <Col xs={6}>
           <label className="Viagem-form__label" htmlFor="data_ida">
-            Data de ída:
+            Data de ida:
           </label>
           <Field
             className="Viagem-form__input"

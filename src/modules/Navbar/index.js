@@ -32,16 +32,16 @@ class Navbar extends React.Component {
           </Link>
           <nav class="my-2 my-md-0 mr-md-3">
             <Link class="p-2 text-dark" to="/cadastro">
-              peça ajuda
+              cadastre uma viagem
             </Link>
             <Link class="p-2 text-dark" to="/ajude">
               ajude um atleta
             </Link>
-            <Link class="p-2 text-dark" to="/suporte">
-              suporte
-            </Link>
             <Link class="p-2 text-dark" to="/depoimento">
               depoimentos
+            </Link>
+            <Link class="p-2 text-dark" to="/suporte">
+              suporte
             </Link>
           </nav>
           <button class="btn btn-outline-success my-2 my-sm-0" href="#">

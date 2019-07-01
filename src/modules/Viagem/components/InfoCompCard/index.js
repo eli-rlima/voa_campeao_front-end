@@ -18,7 +18,7 @@ const InfoCompCard = ({ viagem }) => (
       </span>
       , na cidade de <span className="text_color">{viagem.destino}</span>.
       <span> O {viagem.atleta.nome} vai sar da cidade</span>{" "}
-      <span>{viagem.atleta.origem}</span>.
+      <span className="text_color">{viagem.origem}</span>.
     </div>
   </div>
 );

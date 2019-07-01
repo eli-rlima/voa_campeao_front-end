@@ -1,5 +1,10 @@
 .construcao {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 250px;
+}
+
+.construcao__space {
+  height: 203px;
 }
